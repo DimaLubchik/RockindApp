@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondWeekActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+
+
+        >
+
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="0dp"
+            android:src="@drawable/programs_my_selector"
+            android:onClick="onClickFragmentsButtons" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="0dp"
+            android:src="@drawable/work_selector"
+            android:onClick="onClickFragmentsButtons" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="0dp"
+            android:src="@drawable/profile_selector"
+            android:onClick="onClickFragmentsButtons" />
+    </LinearLayout>
+    <FrameLayout
+
+        android:id="@+id/fragment_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.myapplication.MyProgramsFragment"></FrameLayout>
+
+</LinearLayout>

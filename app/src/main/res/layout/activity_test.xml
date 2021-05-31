@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity"
+        tools:visibility="visible">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="29dp">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="382dp"
+                android:layout_height="28dp"
+                android:text="1.Максимальное количество отжиманий за 30 секунд?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RadioGroup
+                android:id="@+id/answer1"
+                android:layout_width="268dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                app:layout_constraintVertical_bias="0.04000002">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="меньше 25" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="25-40" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="40-55 " />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="55 и больше " />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Question2"
+                android:layout_width="382dp"
+                android:layout_height="28dp"
+                android:text='2.Упражнение "Бёрпи" за 1 минуту ?'
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                app:layout_constraintVertical_bias="0.17000002" />
+
+            <RadioGroup
+                android:id="@+id/answer2"
+                android:layout_width="268dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                app:layout_constraintVertical_bias="0.23000002">
+
+                <RadioButton
+                    android:id="@+id/radioButton11"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="меньше 14" />
+
+                <RadioButton
+                    android:id="@+id/radioButton12"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="14-17" />
+
+                <RadioButton
+                    android:id="@+id/radioButton13"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="17-20" />
+
+                <RadioButton
+                    android:id="@+id/radioButton14"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="20 и больше" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="382dp"
+                android:layout_height="28dp"
+                android:text='3.Упражнеие "Oбратные скручивания" за 30 секунд?'
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                app:layout_constraintVertical_bias="0.333333" />
+
+            <RadioGroup
+                android:id="@+id/answer3"
+                android:layout_width="268dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                app:layout_constraintVertical_bias="0.39999998">
+
+                <RadioButton
+                    android:id="@+id/radioButton21"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="меньше 20 " />
+
+                <RadioButton
+                    android:id="@+id/radioButton22"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="20-25 " />
+
+                <RadioButton
+                    android:id="@+id/radioButton23"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="25-37" />
+
+                <RadioButton
+                    android:id="@+id/radioButton24"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="37 и больше" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="400dp"
+                android:layout_height="28dp"
+                android:text="4. Планка на время, засеките время и стойте до максимума."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                app:layout_constraintVertical_bias="0.51111" />
+
+            <RadioGroup
+                android:id="@+id/answer4"
+                android:layout_width="268dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                app:layout_constraintVertical_bias="0.6">
+
+                <RadioButton
+                    android:id="@+id/radioButton31"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="меньше 40 секунд" />
+
+                <RadioButton
+                    android:id="@+id/radioButton32"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="40 секунд - 1 минута 20 секунд" />
+
+                <RadioButton
+                    android:id="@+id/radioButton33"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="1 минута 20 секунд - 2 минуты 30 секунд" />
+
+                <RadioButton
+                    android:id="@+id/radioButton34"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text=" 2 минуты 30 секунд и больше" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="382dp"
+                android:layout_height="28dp"
+                android:text="5.Приседания за 30 секунд?"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.68" />
+
+            <RadioGroup
+                android:id="@+id/answer5"
+                android:layout_width="268dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                app:layout_constraintVertical_bias="0.78">
+
+                <RadioButton
+                    android:id="@+id/radioButton51"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text=" меньше 20 " />
+
+                <RadioButton
+                    android:id="@+id/radioButton52"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="20 - 45 " />
+
+                <RadioButton
+                    android:id="@+id/radioButton53"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="45 - 60" />
+
+                <RadioButton
+                    android:id="@+id/radioButton54"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="60 и больше" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.050000012"
+        app:srcCompat="@drawable/otgimania" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21"
+        app:srcCompat="@drawable/berpi2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.39"
+        app:srcCompat="@drawable/scrychivania" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.56"
+        app:srcCompat="@drawable/planka" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/pricidania" />
+
+    <Button
+        android:id="@+id/answerButton"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:background="@drawable/button_stroke_black95_press_white"
+        android:onClick="onCLickAnswerButton"
+        android:text="Отправить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.94"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

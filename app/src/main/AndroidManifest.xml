@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".ProgramTemplate"></activity>
+        <activity android:name=".selectNameFoto" />
+        <activity android:name=".TemplateExActivity" />
+        <activity android:name=".WarmUpOpening.Gymnastics_Up" />
+        <activity android:name=".WarmUpOpening.Stretching_Up" />
+        <activity android:name=".WarmUpOpening.Cardio_Up" />
+        <activity android:name=".WarmUpOpening.Warming_Up_Muscles" />
+        <activity android:name=".programs.Endurance_Ex_forPrograms" />
+        <activity android:name=".programs.Legs_Ex_forPrograms" />
+        <activity android:name=".programs.Back_Ex_forPrograms" />
+        <activity android:name=".programs.Arm_Ex_forPrograms" />
+        <activity android:name=".programs.Press_Ex_forPrograms" />
+        <activity android:name=".WarmUp" />
+        <activity android:name=".Press" />
+        <activity android:name=".SecondWeekActivity" />
+        <activity android:name=".FirstWeekActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TestActivity" />
+        <activity android:name=".ProgramsActivity" />
+        <activity android:name=".TutorialActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
