@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity"
+    android:background="@drawable/font_select_foto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тест"
+            android:textSize="30sp"
+            android:fontFamily="@font/brandon_black"
+            android:textAllCaps="true"
+            android:padding="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/ctg_layout"
+                android:layout_margin="18dp"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/question1"
+                    android:layout_width="382dp"
+                    android:layout_height="28dp"
+                    android:text="1.Максимальное количество отжиманий за 30 секунд?"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/answer1"
+                    android:layout_width="268dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text="меньше 25" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text="25-40" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text="40-55 " />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text="55 и больше " />
+                </RadioGroup>
+
+
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/otgimania"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="200dp"
+             />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="20dp"
+            android:padding="5dp"
+            android:background="@drawable/ctg_layout">
+            <TextView
+                android:id="@+id/Question2"
+                android:layout_width="382dp"
+                android:layout_height="28dp"
+                android:text='2.Упражнение "Бёрпи" за 1 минуту ?' />
+
+            <RadioGroup
+                android:id="@+id/answer2"
+                android:layout_width="268dp"
+                android:layout_alignParentBottom="true"
+                android:layout_height="90dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton11"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="меньше 14" />
+
+                <RadioButton
+                    android:id="@+id/radioButton12"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="14-17" />
+
+                <RadioButton
+                    android:id="@+id/radioButton13"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="17-20" />
+
+                <RadioButton
+                    android:id="@+id/radioButton14"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="20 и больше" />
+            </RadioGroup>
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/berpi2"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="200dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:background="@drawable/ctg_layout">
+                <TextView
+                    android:id="@+id/question3"
+                    android:layout_width="382dp"
+                    android:layout_height="28dp"
+                    android:text='3.Упражнеие "Oбратные скручивания" за 30 секунд?'
+                     />
+
+                <RadioGroup
+                    android:id="@+id/answer3"
+                    android:layout_width="268dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentBottom="true"
+                   >
+
+                    <RadioButton
+                        android:id="@+id/radioButton21"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text="меньше 20 " />
+
+                    <RadioButton
+                        android:id="@+id/radioButton22"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text="20-25 " />
+
+                    <RadioButton
+                        android:id="@+id/radioButton23"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text="25-37" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton24"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text="37 и больше" />
+                </RadioGroup>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/scrychivania" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+            android:padding="5dp"
+            android:background="@drawable/ctg_layout">
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="390dp"
+                android:layout_height="40dp"
+                android:text="4. Планка на время, засеките время и стойте до максимума." />
+
+            <RadioGroup
+                android:id="@+id/answer4"
+                android:layout_width="268dp"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioButton31"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="меньше 40 секунд" />
+
+                <RadioButton
+                    android:id="@+id/radioButton32"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="40 секунд - 1 минута 20 секунд" />
+
+                <RadioButton
+                    android:id="@+id/radioButton33"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text="1 минута 20 секунд - 2 минуты 30 секунд" />
+
+                <RadioButton
+                    android:id="@+id/radioButton34"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:text=" 2 минуты 30 секунд и больше" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/planka" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:background="@drawable/ctg_layout">
+                <TextView
+                    android:id="@+id/question5"
+                    android:layout_width="382dp"
+                    android:layout_height="28dp"
+                    android:text="5.Приседания за 30 секунд?" />
+
+                <RadioGroup
+                    android:id="@+id/answer5"
+                    android:layout_width="268dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentBottom="true">
+
+                    <RadioButton
+                        android:id="@+id/radioButton51"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text=" меньше 20 " />
+
+                    <RadioButton
+                        android:id="@+id/radioButton52"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text="20 - 45 " />
+
+                    <RadioButton
+                        android:id="@+id/radioButton53"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text="45 - 60" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton54"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:text="60 и больше" />
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="14dp"
+                    android:src="@drawable/pricidania" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/answerButton"
+            android:layout_width="100dp"
+            android:layout_height="54dp"
+            android:background="@drawable/button_stroke_black95_press_white"
+            android:onClick="onCLickAnswerButton"
+            android:text="Отправить"
+            android:layout_gravity="center"
+           />
+    </LinearLayout>
+
+
+
+</ScrollView>

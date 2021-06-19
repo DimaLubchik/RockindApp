@@ -1,34 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TutorialActivity">
+    android:padding="30dp"
+    android:background="@drawable/font_select_foto"
+    tools:context=".TutorialActivity"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="500dp"
+       android:paddingTop="100dp"
+       android:background="@drawable/ctg_layout"
+       android:layout_marginTop="50dp"
+       android:padding="10dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/question1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Инструкция"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+       <TextView
+           android:id="@+id/question1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Инструкция"
+           android:layout_gravity="center"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.498"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.022" />
+
+   </LinearLayout>
 
     <Button
         android:id="@+id/tutorialButton"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:background="@drawable/button_stroke_black95_press_white"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:textAllCaps="false"
+        android:background="@drawable/ctg_layout"
+        android:fontFamily="@font/brandon_black"
         android:onClick="onClickTutorialButton"
-        android:text="Пройти тест"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.944" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Пройти тест" />
+</LinearLayout>

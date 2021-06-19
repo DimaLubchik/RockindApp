@@ -1,11 +1,13 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -136,21 +138,15 @@ public class SecondWeekActivity extends AppCompatActivity {
         ft.commit();
     }
 
-    @Override
-    public void onBackPressed() {
 
-        if (backPressedTime + 2000 > System.currentTimeMillis())
-        {
-            backToast.cancel();
-            super.onBackPressed();
-            return;
-        }
-        else{
-            backToast=Toast.makeText(getBaseContext(),"Нажмите ещё раз, чтобы выйти", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-        backPressedTime = System.currentTimeMillis();
-    }
+
+
+    /*public void onDestroy() {
+        super.onDestroy();
+
+        System.runFinalizersOnExit(true);
+        System.exit(0);
+    }*/
 
     public void onClickPressButton(View view)
     {
@@ -177,6 +173,7 @@ public class SecondWeekActivity extends AppCompatActivity {
         Intent goal =new Intent(this, Endurance_Ex_forPrograms.class);
         startActivity(goal);
     }
+
 }
 
 

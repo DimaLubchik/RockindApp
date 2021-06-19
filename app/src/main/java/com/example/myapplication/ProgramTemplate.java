@@ -63,16 +63,8 @@ public class ProgramTemplate extends AppCompatActivity {
             LayoutInflater layoutInflater= (LayoutInflater) context.getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             View row = layoutInflater.inflate(R.layout.row, parent, false);
-            TextView workingMusclesText= row.findViewById(R.id.working_muscles);
-            TextView timeText=row.findViewById(R.id.time_work);
-            TextView structureText=row.findViewById(R.id.structure_work);
-            try {
-                workingMusclesText.setText("fddshsh");
-                timeText.setText(workingMusclesText.getText() + "\n" + myProgram.workingMuscles);
-                structureText.setText(workingMusclesText.getText() + "\n" + myProgram.workingMuscles);
-            } catch (Exception exception) {
-                exception.printStackTrace();
-            }
+
+
             //присваивание фотографии в row массивом
             ImageView images = row.findViewById(R.id.image);
             TextView myTitle = row.findViewById(R.id.textView1);
@@ -96,6 +88,10 @@ public class ProgramTemplate extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_program_template);
 
+        TextView workingMusclesText=findViewById(R.id.working_muscles);
+        TextView timeText=findViewById(R.id.time_work);
+        TextView structureText=findViewById(R.id.structure_work);
+
         ListView = findViewById(R.id.programs_listView);
 
         Window w = getWindow();
@@ -105,6 +101,9 @@ public class ProgramTemplate extends AppCompatActivity {
         Exercises ex = new Exercises();
         TrainingProgram currentProgram = ex.ArmsProgramsByLevel.get(currentLevel);
         ProgramTemplate.MyAdapter adapter = new ProgramTemplate.MyAdapter(this,currentProgram);
+        workingMusclesText.setText("Работающие мышцы:"+"\n"+currentProgram.workingMuscles);
+        timeText.setText("Время на выполнение:"+"\n"+currentProgram.time);
+        structureText.setText("Структура(кол-во серий,подходов,отдых):"+"\n"+currentProgram.structure);
         ListView.setAdapter(adapter);
 
         ListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

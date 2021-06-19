@@ -1,4 +1,4 @@
-package com.example.myapplication;
+ package com.example.myapplication;
 import android.media.Image;
 
 import java.io.LineNumberReader;
@@ -19,17 +19,18 @@ public class Exercises {
     private static final String[][] LegsEx  = {{"Приседания"},{"Приседания","Бег"},{"Приседания hard"},{"Приседания hard","Бег hard"}};
     public Exercises(){
         createArms();
-        createProgramsForDifferentLevels();;
+        createProgramsForDifferentLevels();
     }
 
-    public HashMap<String, List<Exercise>> Arms=new HashMap<>();
+    public  HashMap<String, List<Exercise>> Arms=new HashMap<>();
     public  ArrayList<String> ArmsMuscles= new ArrayList<>();
-    public HashMap<Integer, TrainingProgram> ArmsProgramsByLevel= new HashMap<>();
+    public  HashMap<Integer, TrainingProgram> ArmsProgramsByLevel= new HashMap<>();
 
 
     public void createProgramsForDifferentLevels()
     {
         createArmsPrograms();
+
     }
     //Создает программы для груди для разных уровней подготовленности
     public void createArmsPrograms()
@@ -53,7 +54,7 @@ public class Exercises {
         workingMuscles="triceps,biceps";
         time =" 5 minutes each exercise";
         structure="Circle training";
-        TrainingProgram program_2=new TrainingProgram(workingMuscles,time,structure,temp_1);
+        TrainingProgram program_2=new TrainingProgram(workingMuscles,time,structure,temp_2);
         ArmsProgramsByLevel.put(2,program_2);
         List<Exercise> temp_3=new ArrayList<>();
         temp_3.add(new Exercise("Отжимания на брусьях","Основную нагрузку отжимания на брусьях создают на мышцы задней поверхности плеча, или трицепсы. ... Так как грудь и трицепс работают в паре – чем больше нагружается грудь, тем меньше задействуется трицепс и наоборот. Грудные мышцы больше и сильнее, поэтому при первой же возможности они перетягивают нагрузку на себя.",2,R.drawable.brusyah));
@@ -62,7 +63,7 @@ public class Exercises {
         workingMuscles="triceps,biceps";
         time =" 5 minutes each exercise";
         structure="Circle training";
-        TrainingProgram program_3=new TrainingProgram(workingMuscles,time,structure,temp_1);
+        TrainingProgram program_3=new TrainingProgram(workingMuscles,time,structure,temp_3);
         ArmsProgramsByLevel.put(3,program_3);
         List<Exercise> temp_4=new ArrayList<>();
         temp_4.add(new Exercise("Французский жим","Это одно из лучших упражнений для накачки трицепса. Оно позволяет акцентировать нагрузку на сокращении длинного и медиального пучка, а именно они и задают визуальную «массивность» руки. Для этого опускайте снаряд максимально низко и делайте в нижней точке небольшую паузу.\n" +
@@ -84,14 +85,14 @@ public class Exercises {
         workingMuscles="triceps,biceps";
         time =" 5 minutes each exercise";
         structure="Circle training";
-        TrainingProgram program_4=new TrainingProgram(workingMuscles,time,structure,temp_1);
+        TrainingProgram program_4=new TrainingProgram(workingMuscles,time,structure,temp_4);
         ArmsProgramsByLevel.put(4,program_4);
 
     }
 
-    public void createArms()
+    public  void createArms()
     {
-        ArmsMuscles.add("Бицепсы");
+        ArmsMuscles.add("Бицепс");
         ArmsMuscles.add("Трицепс");//Brachioradial
         ArmsMuscles.add("Плечелучевая мышца");
         ArmsMuscles.add("Трапеции");//Trapeze
